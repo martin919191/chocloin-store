@@ -1,0 +1,144 @@
+@font-face {
+  font-family: "EduSABeginner";
+  src: url(../fonts/Edu_SA_Beginner/EduSABeginner-VariableFont_wght.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-family: EduSABeginner, sans-serif;
+  position: relative;
+}
+
+#fake-cursor {
+  display: none;
+  position: absolute;
+  width: 0.8em;
+  height: 1.2em;
+  background-color: transparent;
+  background-image: url(../img/mac-cursor-6.png);
+  background-size: cover;
+  background-position-x: -5;
+  background-position-y: -5;
+  z-index: 200;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: linear-gradient(to bottom right, #FFC553, #FFEB53);
+}
+
+.body-container {
+  height: 100%;
+  padding: 5px;
+}
+.body-container .logo {
+  cursor: none;
+  border-radius: 1em;
+  background-color: rgba(255, 174, 15, 0.5);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  z-index: 300;
+  border: 0.5em black;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+.body-container .logo * {
+  margin: 0;
+}
+.body-container .logo img {
+  height: 2em;
+}
+.body-container .logo p {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+}
+.body-container .balance-container {
+  cursor: none;
+  border-radius: 1em;
+  background-color: rgba(255, 174, 15, 0.5);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  z-index: 300;
+  border: 0.5em black;
+  padding: 10px;
+  margin-bottom: 5px;
+  position: fixed;
+  bottom: 0;
+  right: 5px;
+}
+.body-container .balance-container .label {
+  font-size: 0.8em;
+}
+.body-container .balance-container .label span {
+  padding: 3px;
+}
+.body-container .balance-container .balance {
+  font-size: 0.8em;
+}
+.body-container .balance-container .balance span {
+  text-shadow: 0 0 1px;
+  font-size: 2em;
+  font-weight: bold;
+}
+.body-container .menu {
+  z-index: 100;
+  padding: 0.3em;
+  border-radius: 1em;
+  background-color: rgba(255, 174, 15, 0.5);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+.body-container .menu .menu-elements {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  align-items: center;
+  list-style-type: none;
+}
+.body-container .menu .menu-elements li {
+  width: auto;
+  display: table-cell;
+  display: inline-block;
+  padding: 0.1em;
+  text-align: center;
+}
+.body-container .menu .menu-elements li button {
+  padding: 0.4em;
+  display: inline-block;
+  background-color: #FFEE73;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.6em;
+  text-decoration: none;
+  color: black;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s;
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  touch-action: manipulation;
+}
+.body-container .menu .menu-elements li button:active {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  touch-action: manipulation;
+  outline: none;
+}
+.body-container .menu .menu-elements li button:hover {
+  font-weight: bold;
+}
+
+@media (pointer: coarse) {
+  .hide-on-touch {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
